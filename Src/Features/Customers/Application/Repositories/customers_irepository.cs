@@ -12,4 +12,9 @@ public class CustomersIRepository : CustomersRepository
     {
         return await _customersService.GetCountryCustomersEntities();
     }
+
+    public override async Task<List<CustomersTopOrdersEntity>> GetCustomersTopInOrders()
+    {
+        return await _customersService.GetCustomersTopInOrders();
+    }
 }

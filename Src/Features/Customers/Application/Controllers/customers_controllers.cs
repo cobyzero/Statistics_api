@@ -20,4 +20,10 @@ public class CustomersController : ControllerBase
     {
         return Ok(await _customersRepository.GetCountryCustomers());
     }
+
+    [HttpGet("customers-top-in-orders")]
+    public async Task<IActionResult> GetCustomersTopInOrders()
+    {
+        return Ok(await _customersRepository.GetCustomersTopInOrders());
+    }
 }
