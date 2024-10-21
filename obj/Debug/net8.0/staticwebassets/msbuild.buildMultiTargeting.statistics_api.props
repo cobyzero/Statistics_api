@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\statistics_api.props" />
-</Project>
