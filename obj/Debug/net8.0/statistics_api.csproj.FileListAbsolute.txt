@@ -167,3 +167,4 @@ C:\Users\edyne\OneDrive\Escritorio\statistics_api\obj\Debug\net8.0\refint\statis
 C:\Users\edyne\OneDrive\Escritorio\statistics_api\obj\Debug\net8.0\statistics_api.pdb
 C:\Users\edyne\OneDrive\Escritorio\statistics_api\obj\Debug\net8.0\statistics_api.genruntimeconfig.cache
 C:\Users\edyne\OneDrive\Escritorio\statistics_api\obj\Debug\net8.0\ref\statistics_api.dll
+C:\Users\edyne\OneDrive\Escritorio\statistics_api\obj\Debug\net8.0\statistics_api.sourcelink.json

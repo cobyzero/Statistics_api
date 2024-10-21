@@ -18,6 +18,6 @@ public class CustomersController : ControllerBase
     [HttpGet("customers-in-country")]
     public async Task<IActionResult> GetCustomersInCountry()
     {
-        return Ok(await _customersRepository.CountryCustomers);
+        return Ok(await _customersRepository.GetCountryCustomers());
     }
 }

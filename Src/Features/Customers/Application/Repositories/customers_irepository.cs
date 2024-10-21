@@ -8,7 +8,7 @@ public class CustomersIRepository : CustomersRepository
         _customersService = customersService;
     }
 
-    protected override async Task<List<CountryCustomersEntity>> GetCountryCustomers()
+    public override async Task<List<CountryCustomersEntity>> GetCountryCustomers()
     {
         return await _customersService.GetCountryCustomersEntities();
     }

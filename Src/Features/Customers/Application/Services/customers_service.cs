@@ -10,7 +10,6 @@ public class CustomersService
         _context = context;
     }
 
-
     public async Task<List<CountryCustomersEntity>> GetCountryCustomersEntities()
     {
         return await _context.Customers.GroupBy(c => c.Country)

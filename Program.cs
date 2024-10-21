@@ -11,9 +11,8 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<StatisticsContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("sqlserver")));
 
-
-builder.Services.AddSingleton<CustomersService>(sp => new CustomersService(sp.GetRequiredService<StatisticsContext>()));
-builder.Services.AddSingleton<CustomersRepository>(sp => new CustomersIRepository(sp.GetRequiredService<CustomersService>()));
+builder.Services.AddScoped<CustomersService>();
+builder.Services.AddScoped<CustomersRepository, CustomersIRepository>();
 
 var app = builder.Build();
 
