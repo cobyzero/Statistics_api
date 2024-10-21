@@ -11,14 +11,14 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<StatisticsContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("sqlserver")));
 
-builder.Services.AddScoped<CustomersService>();
-builder.Services.AddScoped<CustomersRepository, CustomersIRepository>();
+Injector.Inject(builder.Services);
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseDeveloperExceptionPage();
     app.UseSwagger();
     app.UseSwaggerUI();
 }
